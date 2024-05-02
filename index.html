@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARCOS BENJAMIN MENDOZA PEREZ</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background-color: #222;
+      }
+
+      form {
+        background: transparent;
+        padding: 20px 0;
+        max-width: 600px;
+        margin: auto;
+        box-shadow: 0 0 50px #0007;
+        margin-top: 50px;
+        border-radius: 8px;
+      }
+
+      h1 {
+        color: red;
+        font-size: 20px;
+      }
+
+      h2 {
+        text-align: center;
+        color: azure;
+        margin: 0;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 22px;
+        padding: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 1px;
+        border-bottom: 1px solid ;
+      }
+
+      .form_input {
+        padding: 6px 20px;
+      }
+
+      .subtitulo {
+        color: rgba(255, 255, 255, 0.678);
+      }
+
+      .radio {
+        display: inline-block;
+      }
+
+      .check1 {
+        margin-left: 45px;
+      }
+
+      .check2 {
+        margin-left: 48px;
+      }
+
+      .check {
+        margin-left: 20px;
+      }
+
+      .select {
+        margin-top: 15px;
+      }
+
+      .input,
+      textarea, select {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 6px 8px;
+        border: none;
+        border: 1px solid #666161;
+        box-shadow: 0 0 45px #272626aa;
+        background-color: transparent;
+        border-radius: 4px;
+        color: azure;
+        margin-top: 5px;
+        outline: none;
+      }
+
+      .input:focus {
+        border: 1px solid rgba(255, 255, 255, 0.664);
+      }
+
+      .subir1 {
+        color: rgba(21, 187, 199, 0.849);
+        margin-left: 25px;
+      }
+
+      .subir2 {
+        color: rgba(21, 187, 199, 0.849);
+        margin-left: 65px;
+        margin-top: 15px;
+      }
+
+      .buton {
+        display: inline-block;
+        text-decoration: none;
+        border: none;
+        padding: 7px;
+        background-color: rgba(37, 212, 37, 0.938);
+        color: white;
+        letter-spacing: 1px;
+        border-radius: 6px;
+        margin-left: 190px;
+        margin-top: 20px;
+      }
+
+      .abajolinea {
+        border: 1px solid white; 
+        margin-top: 15px;
+      }
+
+      .interna {
+        background-color: rgba(255, 255, 255, 0.397);
+        text-align: center;
+        border-radius: 6px;
+      }
+
+      .textinterna {
+        padding-top: 15px;
+        color: rgba(228, 219, 219, 0.952);
+      }
+
+      .externa {
+        background-color: rgba(255, 255, 255, 0.397);
+        text-align: center;
+        border-radius: 6px;
+      }
+
+      .pagina {
+        display: inline-block;
+        text-decoration: none;
+        border: none;
+        padding: 7px;        
+        background-color:transparent;
+        border: 2px solid black;
+        color: rgba(248, 232, 0, 0.89);
+        letter-spacing: 1px;
+        border-radius: 6px;
+        margin-left: 14px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      textarea {
+        min-width: 100%;
+        resize: none;
+        min-height: 100px;
+        font-family: sans-serif;
+        margin-bottom: 15px;
+      }
+
+      label {
+        color: azure;
+        font-size: 0.88em;
+      }
+
+      option {
+        background-color: #222;
+      }
+
+      .clic {
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>MARCOS BENJAMIN MENDOZA PEREZ</h1>
+    <form>
+      <h2>Registro TRABAJADORES</h2>
+      <div class="form_input">
+        <label for="nombre">RUT</label>
+        <input class="input" type="number" placeholder="Sin puntos ni guion" id="nombre" />
+      </div>
+
+      <div class="form_input">
+        <label for="email">NOMBRE</label>
+        <input class="input" type="email" placeholder="Juan" id="email" />
+      </div>
+
+      <div class="form_input">
+        <label for="email">APELLIDO PATERNO</label>
+        <input class="input" type="email" placeholder="Perez" id="email" />
+      </div>
+
+      <div class="form_input">
+        <label for="email">APELLIDO MATERNO</label>
+        <input class="input" type="email" placeholder="Saucedo" id="email" />
+      </div>
+
+      <div class="form_input">
+        <p class="subtitulo">SEXO:</p>
+        <label for="M">Masculino</label>
+        <input class="radio" type="radio" id="M" name="G">
+        <label for="F">Femenino</label>
+        <input class="radio" type="radio" id="F" name="G">
+      </div>
+
+      <div class="form_input">
+        <p class="subtitulo">NIVEL DE ESTUDIO:</p>
+        <label for="uno">No tiene</label>
+        <input class="check1" type="checkbox" id="uno">
+        <div>
+          <label for="dos">Técnico</label>
+          <input class="check2" type="checkbox" id="dos">
+        </div>
+        <label for="tres">Universitario</label>        
+        <input class="check"  type="checkbox" id="tres">
+      </div>
+
+      <div class="form_input">
+        <div class="select">
+          <label for="tipos">Ciudad de nacimiento:</label>
+          <select name="type-user" id="tipos">
+            <!-- El value es el valor que el servidor va a recibir -->
+            <option value="user1">Santa Cruz de la Sierra</option>
+            <option value="user2">El Alto</option>
+            <option value="user3">Quillacollo</option>
+            <option value="user4">Sucre</option>
+          </select>
+        </div>
+        
+      </div>
+
+      <div class="form_input">
+        <label for="">Curriculum</label>
+        <input class="subir1" type="file">
+        <div>
+          <label for="">Foto</label>
+          <input class="subir2" type="file">
+        </div>
+      </div>
+
+      <a class="buton" href="#">Resgistrar trabajador</a>
+      <div class="abajolinea"></div>
+      <div class="interna">
+        <p class="textinterna">VISITA NUESTA PAGINA</p>
+        <a class="pagina" target="_blank" href="https://benjaminmarc2804.github.io/portadaweb/">Pagina Interna</a>
+      </div>
+
+      <div class="externa">
+        <p class="textinterna">VISITA LA PAGINA DE LA EMPRESA AFILIADA</p>
+        <a class="pagina" target="_blank" href="https://www.cainco.org.bo/">Pagina Externa</a>
+      </div>
+    </form>
+  </body>
+</html>
